@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>10.0.0</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{D8A30233-2211-4B15-A082-F824ACCC832C}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <RootNamespace>Goliath.Tests</RootNamespace>
+    <AssemblyName>Goliath.Tests</AssemblyName>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\bin\Debug</OutputPath>
+    <DefineConstants>DEBUG;</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>full</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>..\bin\Release</OutputPath>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <ConsolePause>false</ConsolePause>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="nunit.framework">
+      <Private>False</Private>
+    </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\..\home\juan\Proyectos\goliath\Goliath\Goliath.csproj">
+      <Project>{6E79545D-5836-4FA4-982D-2132AACD9D3F}</Project>
+      <Name>Goliath</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Goliath.Plugin.Demo\Goliath.Plugin.Demo.csproj">
+      <Project>{F12FF90D-C472-44B0-B834-505C8D586301}</Project>
+      <Name>Goliath.Plugin.Demo</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Goliath.Plugin.Zonaprop\Goliath.Plugin.Zonaprop.csproj">
+      <Project>{5CF944D1-92CD-43CA-B609-8BE8ED916C1B}</Project>
+      <Name>Goliath.Plugin.Zonaprop</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Empty.cs" />
+  </ItemGroup>
+</Project>
