@@ -11,8 +11,8 @@ namespace Goliath.Tests.DemoPlugin
 	public class DemoPageTest : MockTest
 	{
 		/// <summary>
-		/// Comprueba que los valores del constructor de la pagina
-		/// coincidan con las propiedades indicadas
+		/// Comprueba la consultas xpath correctas para completar
+		/// las propiedades de datos de la pagina.
 		/// </summary>
 		[Test]
 		public void TheTitleMustBeTheIndicated()
