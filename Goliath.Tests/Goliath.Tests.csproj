@@ -32,6 +32,9 @@
     <Reference Include="nunit.framework">
       <Private>False</Private>
     </Reference>
+    <Reference Include="NMock3">
+      <HintPath>..\lib\NMock3.dll</HintPath>
+    </Reference>
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
@@ -49,6 +52,10 @@
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Empty.cs" />
+    <Compile Include="DemoPlugin\DemoPageTest.cs" />
+    <Compile Include="MockTest.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="DemoPlugin\" />
   </ItemGroup>
 </Project>
