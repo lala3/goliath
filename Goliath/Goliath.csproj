@@ -34,4 +34,9 @@
     <Compile Include="IPage.cs" />
     <Compile Include="IDocument.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <Reference Include="HtmlAgilityPack">
+      <HintPath>..\lib\HtmlAgilityPack.dll</HintPath>
+    </Reference>
+  </ItemGroup>
 </Project>
