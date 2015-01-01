@@ -19,7 +19,7 @@ namespace Goliath.Tests.DemoPlugin
 		{
 			var docMock = CreateMock<IDocument> ();
 
-			docMock.Expects.One.MethodWith<IDocument> (x => x.QueryText ("/html/body/h1/text()"), "a");
+			docMock.Expects.One.MethodWith (x => x.QueryText ("/html/body/h1/text()"), "a");
 
 			var page = new Publication (docMock.MockObject);
 
