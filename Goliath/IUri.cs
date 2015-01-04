@@ -6,6 +6,10 @@ namespace Goliath
 	/// </summary>
 	public interface IUri
 	{
+		/// <summary>
+		/// Descarga la uri indicada como un documento html
+		/// </summary>
+		/// <returns>The document.</returns>
 		IDocument DownloadDocument();
 	}
 }
