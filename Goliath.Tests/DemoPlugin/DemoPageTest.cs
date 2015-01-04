@@ -27,5 +27,19 @@ namespace Goliath.Tests.DemoPlugin
 
 			Assert.AreEqual ("a", page.Title);
 		}
+
+		/// <summary>
+		/// Realiza una integracion simple dado que se puede
+		/// acceder a recursos sin dependencias externas
+		/// </summary>
+		[Test]
+		public void SimpleIntegrationOverResource()
+		{
+			var uri = Uri.Create ("resource://Goliath.Plugin.Demo/Goliath.Plugin.Demo.Pages.Publication.html");
+
+			var page = new Publication (uri);
+
+			Assert.AreEqual ("title", page.Title);
+		}
 	}
 }
