@@ -33,15 +33,5 @@ namespace Goliath
 			var parts = uri.Split (new char[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
 			return new ResourceUri (parts [1], parts [2]);
 		}
-
-		/// <summary>
-		/// Convierte una cadena en una uri para simplificar
-		/// la escritura de la misma
-		/// </summary>
-		/// <param name="text">Text.</param>
-		public static implicit operator Uri(string text)
-		{
-			return Uri.Create (text);
-		}
 	}
 }

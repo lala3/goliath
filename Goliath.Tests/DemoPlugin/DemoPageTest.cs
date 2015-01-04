@@ -35,11 +35,11 @@ namespace Goliath.Tests.DemoPlugin
 		[Test]
 		public void SimpleIntegrationOverResource()
 		{
+			var plugin = Load.Plugin ("Demo");
 			var uri = Uri.Create ("resource://Goliath.Plugin.Demo/Goliath.Plugin.Demo.Pages.Publication.html");
+			var publication = plugin.GetPublication (uri);
 
-			var page = new PublicationPage (uri);
-
-			Assert.AreEqual ("title", page.Title);
+			Assert.AreEqual ("title", publication.Title);
 		}
 	}
 }

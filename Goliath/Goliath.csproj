@@ -38,6 +38,7 @@
     <Compile Include="ApDocument.cs" />
     <Compile Include="Publication.cs" />
     <Compile Include="IUri.cs" />
+    <Compile Include="Load.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="HtmlAgilityPack">
