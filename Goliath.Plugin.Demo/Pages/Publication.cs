@@ -11,9 +11,9 @@ namespace Goliath.Plugin.Demo.Pages
 		/// correspondientes valoes a base de un documento
 		/// </summary>
 		/// <param name="title">Titulo</param>
-		public Publication(IDocument document)
+		public Publication(IUri uri)
 		{
-			Title = document.QueryText ("/html/body/h1/text()");
+			Title = uri.DownloadDocument().QueryText ("/html/body/h1/text()");
 		}
 		/// <summary>
 		/// Propiedad que contiene el titulo de la pagina

@@ -18,10 +18,12 @@ namespace Goliath.Tests.DemoPlugin
 		public void TheTitleMustBeTheIndicated()
 		{
 			var docMock = CreateMock<IDocument> ();
-
 			docMock.Expects.One.MethodWith (x => x.QueryText ("/html/body/h1/text()"), "a");
 
-			var page = new Publication (docMock.MockObject);
+			var uriMock = CreateMock<IUri> ();
+			uriMock.Expects.One.MethodWith (x => x.DownloadDocument (), docMock.MockObject);
+
+			var page = new Publication (uriMock.MockObject);
 
 			Assert.AreEqual ("a", page.Title);
 		}
