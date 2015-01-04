@@ -1,4 +1,5 @@
 using NUnit.Framework;
+using System.IO;
 
 namespace Goliath.Tests.Integration
 {
@@ -34,8 +35,12 @@ namespace Goliath.Tests.Integration
 		public void TestThePropertiesOfAPublication()
 		{
 			var p = new Publication ("title");
-
 			Assert.AreEqual ("title", p.Title);
+
+			var s = new StringWriter ();
+			p.Save (s);
+
+			Assert.AreEqual ("<publication title=\"title\" />", s.ToString ());
 		}
 	}
 }

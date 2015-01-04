@@ -1,3 +1,6 @@
+using System.IO;
+using System.Xml;
+
 namespace Goliath
 {
 	/// <summary>
@@ -18,6 +21,19 @@ namespace Goliath
 		public Publication (string title)
 		{
 			Title = title;
+		}
+
+		/// <summary>
+		/// Guarda la publicacion como un documento xml
+		/// </summary>
+		/// <param name="output">Flujo de salida</param>
+		public void Save (TextWriter output)
+		{
+			var writer = new XmlTextWriter (output);
+			writer.WriteStartElement ("publication");
+			writer.WriteAttributeString ("title", Title);
+			writer.WriteEndElement ();
+			writer.Close ();
 		}
 	}
 }
