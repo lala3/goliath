@@ -28,10 +28,20 @@ namespace Goliath
 		/// un texto descriptivo
 		/// </summary>
 		/// <param name="uri">Uri en formato de texto</param>
-		public static IUri Create(string uri)
+		public static Uri Create(string uri)
 		{
 			var parts = uri.Split (new char[] { '/' }, StringSplitOptions.RemoveEmptyEntries);
 			return new ResourceUri (parts [1], parts [2]);
+		}
+
+		/// <summary>
+		/// Convierte una cadena en una uri para simplificar
+		/// la escritura de la misma
+		/// </summary>
+		/// <param name="text">Text.</param>
+		public static implicit operator Uri(string text)
+		{
+			return Uri.Create (text);
 		}
 	}
 }
