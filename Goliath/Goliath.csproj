@@ -34,10 +34,14 @@
     <Compile Include="IPage.cs" />
     <Compile Include="IDocument.cs" />
     <Compile Include="IUri.cs" />
+    <Compile Include="ResourceUri.cs" />
+    <Compile Include="Uri.cs" />
+    <Compile Include="ApDocument.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="HtmlAgilityPack">
       <HintPath>..\lib\HtmlAgilityPack.dll</HintPath>
     </Reference>
+    <Reference Include="System.Xml" />
   </ItemGroup>
 </Project>
