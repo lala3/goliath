@@ -24,5 +24,18 @@ namespace Goliath.Tests.Integration
 
 			Assert.AreEqual ("title", result);
 		}
+
+		/// <summary>
+		/// Realiza un prueba sobre el constructor de una publicacion
+		/// para comprobar que coincidan todas las propiedades
+		/// sobre los parametros del constructor
+		/// </summary>
+		[Test]
+		public void TestThePropertiesOfAPublication()
+		{
+			var p = new Publication ("title");
+
+			Assert.AreEqual ("title", p.Title);
+		}
 	}
 }

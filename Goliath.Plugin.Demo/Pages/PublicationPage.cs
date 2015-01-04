@@ -4,14 +4,14 @@ namespace Goliath.Plugin.Demo.Pages
 	/// Estructura de datos de una pagina html
 	/// parseada de ejemplo
 	/// </summary>
-	public class Publication : IPage
+	public class PublicationPage : IPage
 	{
 		/// <summary>
 		/// Inicializa la estructura con sus
 		/// correspondientes valoes a base de un documento
 		/// </summary>
 		/// <param name="title">Titulo</param>
-		public Publication(IUri uri)
+		public PublicationPage(IUri uri)
 		{
 			Title = uri.DownloadDocument().QueryText ("/html/body/h1/text()");
 		}

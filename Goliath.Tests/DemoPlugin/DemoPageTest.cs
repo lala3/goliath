@@ -23,7 +23,7 @@ namespace Goliath.Tests.DemoPlugin
 			var uriMock = CreateMock<IUri> ();
 			uriMock.Expects.One.MethodWith (x => x.DownloadDocument (), docMock.MockObject);
 
-			var page = new Publication (uriMock.MockObject);
+			var page = new PublicationPage (uriMock.MockObject);
 
 			Assert.AreEqual ("a", page.Title);
 		}
@@ -37,7 +37,7 @@ namespace Goliath.Tests.DemoPlugin
 		{
 			var uri = Uri.Create ("resource://Goliath.Plugin.Demo/Goliath.Plugin.Demo.Pages.Publication.html");
 
-			var page = new Publication (uri);
+			var page = new PublicationPage (uri);
 
 			Assert.AreEqual ("title", page.Title);
 		}

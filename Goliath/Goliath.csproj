@@ -37,6 +37,7 @@
     <Compile Include="ResourceUri.cs" />
     <Compile Include="Uri.cs" />
     <Compile Include="ApDocument.cs" />
+    <Compile Include="Publication.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="HtmlAgilityPack">
