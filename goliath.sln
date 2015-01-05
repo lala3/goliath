@@ -33,6 +33,6 @@ Global
 		{F12FF90D-C472-44B0-B834-505C8D586301}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(MonoDevelopProperties) = preSolution
-		StartupItem = ..\..\..\..\data\juan\proyectos\goliath\Goliath.Tests\Goliath.Tests.csproj
+		StartupItem = Goliath.Tests\Goliath.Tests.csproj
 	EndGlobalSection
 EndGlobal

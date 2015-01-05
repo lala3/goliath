@@ -30,7 +30,7 @@
   </PropertyGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\home\juan\Proyectos\goliath\Goliath\Goliath.csproj">
+    <ProjectReference Include="..\Goliath\Goliath.csproj">
       <Project>{6E79545D-5836-4FA4-982D-2132AACD9D3F}</Project>
       <Name>Goliath</Name>
     </ProjectReference>

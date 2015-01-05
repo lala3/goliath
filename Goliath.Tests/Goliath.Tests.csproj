@@ -38,10 +38,6 @@
   </ItemGroup>
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <ItemGroup>
-    <ProjectReference Include="..\..\..\..\..\home\juan\Proyectos\goliath\Goliath\Goliath.csproj">
-      <Project>{6E79545D-5836-4FA4-982D-2132AACD9D3F}</Project>
-      <Name>Goliath</Name>
-    </ProjectReference>
     <ProjectReference Include="..\Goliath.Plugin.Demo\Goliath.Plugin.Demo.csproj">
       <Project>{F12FF90D-C472-44B0-B834-505C8D586301}</Project>
       <Name>Goliath.Plugin.Demo</Name>
@@ -49,6 +45,10 @@
     <ProjectReference Include="..\Goliath.Plugin.Zonaprop\Goliath.Plugin.Zonaprop.csproj">
       <Project>{5CF944D1-92CD-43CA-B609-8BE8ED916C1B}</Project>
       <Name>Goliath.Plugin.Zonaprop</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Goliath\Goliath.csproj">
+      <Project>{6E79545D-5836-4FA4-982D-2132AACD9D3F}</Project>
+      <Name>Goliath</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
