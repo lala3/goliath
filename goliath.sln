@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 11.00
 # Visual Studio 2010
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goliath", "Goliath\Goliath.csproj", "{6E79545D-5836-4FA4-982D-2132AACD9D3F}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goliath.Tests", "..\..\..\..\data\juan\proyectos\goliath\Goliath.Tests\Goliath.Tests.csproj", "{D8A30233-2211-4B15-A082-F824ACCC832C}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goliath.Tests", "Goliath.Tests\Goliath.Tests.csproj", "{D8A30233-2211-4B15-A082-F824ACCC832C}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goliath.Plugin.Demo", "..\..\..\..\data\juan\proyectos\goliath\Goliath.Plugin.Demo\Goliath.Plugin.Demo.csproj", "{F12FF90D-C472-44B0-B834-505C8D586301}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goliath.Plugin.Demo", "Goliath.Plugin.Demo\Goliath.Plugin.Demo.csproj", "{F12FF90D-C472-44B0-B834-505C8D586301}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goliath.Plugin.Zonaprop", "..\..\..\..\data\juan\proyectos\goliath\Goliath.Plugin.Zonaprop\Goliath.Plugin.Zonaprop.csproj", "{5CF944D1-92CD-43CA-B609-8BE8ED916C1B}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Goliath.Plugin.Zonaprop", "Goliath.Plugin.Zonaprop\Goliath.Plugin.Zonaprop.csproj", "{5CF944D1-92CD-43CA-B609-8BE8ED916C1B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
